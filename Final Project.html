@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elsa</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(500deg, pink 0%, #9fd3c7 100%);
+    }
+
+    h1 {
+      color: grey;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      color: grey;
+      text-align: center;
+      font-weight: lighter;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      border-radius: 45px;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
+
+    button {
+      background-color: pink;
+      border: 1px solid grey;
+      border-radius: 25px;
+      box-shadow: rgba(7, 7, 7, 0.08) 0px 8px 8px 0;
+      color: white;
+      margin: 0 auto;
+      display: block;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 16px 24px;
+      text-decoration: none;
+      transition: all 200ms ease;
+    }
+    button:hover {
+      background: pink;
+      color: grey;
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .contact {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      margin: 15px;
+      text-align: center;
+    }
+
+    .contact-platform {
+      color: grey;
+      font-size: 18px;
+    }
+
+    p {
+      color: grey;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>
+      <strong> In Memory of Elsa </strong>
+    </h1>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/645/original/IMG_20180118_165731_648.jpg?1622046425"
+      ;
+      alt="Elsa"
+      ;
+    />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/654/original/Elsa_Circle.jpg?1622058692"
+      ;
+      alt="Elsa Circle"
+      ;
+    />
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/009/655/original/Elsa_Sleep.jpg?1622058751"
+      ;
+      alt="Elsa Sleep"
+      ;
+    />
+
+    <h2>One of her <em>favorite</em> people: Fanny</h2>
+    <button>Meow 喵</button>
+
+    <script>
+      function meow() {
+        let name = prompt("What is your name?");
+        if (name.length) {
+          alert("Meow " + name);
+        } else {
+          alert("Meow from Elsa");
+        }
+      }
+
+      let meowButton = document.querySelector("button");
+      meowButton.addEventListener("click", meow);
+    </script>
+
+    <div class="contact">
+      <span class="contact-platform">Instagram: </span>
+      <a
+        href="https://www.instagram.com/elsasisasa/"
+        style="color: #7b7d7d"
+        ;
+        class="elsasisasa"
+      >
+        elsasisasa
+      </a>
+    </div>
+    <br />
+    <hr />
+    <p>Coded by Fanny T ❤️🐱</p>
+  </body>
+</html>
